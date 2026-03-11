@@ -60,7 +60,7 @@ div{
     margin-top: 60px;
     display: flex;
     justify-content: center;
-    margin-left: -70px;
+    margin-left: -60px;
 }
 
 #logo{
@@ -86,18 +86,22 @@ div{
 
 #hola{
     padding: 0;
-    margin-left: 0px;
+    margin-left: 75px;
     margin-bottom: 0;
-    margin-top: 24px;
-    font-size: 75px;
+    margin-top: 26px;
+    font-size: 45px;
+    font-family: Trattatello, fantasy;
+    color: #5e811e;
 }
 
 #adios{
     padding: 0;
     margin: 0;
-    margin-top: -25px;
+    margin-top: -55px;
     float: left;
-    font-size: 120px;
+    font-size: 140px;
+    font-family: Marker Felt, fantasy;
+    color: #cc0a02;
 }
 
 .inbox{
