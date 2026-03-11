@@ -172,7 +172,7 @@ button:hover{
 /* The Modal (background) */
 .modal {
   margin: 0;
-  display:; /* Hidden by default */
+  display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   align-content: center; /* Location of the box */
@@ -221,11 +221,31 @@ backdrop-filter: blur(5.7px);
     font-size: 17px;
     border-radius: 5px;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 19px;
+    font-family: monospace;
 }
 
 
 #buy:hover{
   background-color: #f2a93b;
   color: #32595c;
+}
+
+form{
+    margin: 10px;
+    margin-top: 19px;
+    margin-left: 25px;
+    font-size: 17px;
+    width: 400px;
+    color: #0c3544;
+    font-family: monospace;
+}
+
+input{
+    background-color: #b8cdd0;
+    color: #0c3544;
+    border: none;
+    border-radius: 5px;
+    width: 160px;
+    padding: 2px;
 }
