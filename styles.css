@@ -55,35 +55,46 @@ div{
     border: black solid 2px;
 }
 
-#h1{
-    width: 50px;
-    height: 50px;
-    margin: 0;
-}
-
 #title{
     padding: 0;
-    margin-top: 80px;
+    margin-top: 50px;
+    align-content: center;
     display: flex;
 }
+
+#logo{
+    width: 90px;
+    height: 110px;
+    margin: 0;
+    padding: 0;
+}
+
+#logoimg{
+    margin: 0;
+    width: 120px;
+    margin-left: -10%;
+}
+
 
 #title2{
     margin: 0;
     padding: 0;
-    height: 90px;
+    height: 110px;
 }
 
 #hola{
     padding: 0;
     margin-left: 0px;
+    margin-bottom: 0;
+    font-size: 35px;
 }
 
 #adios{
     padding: 0;
     margin: 0;
-    margin-top: -10px;
+    margin-top: -12px;
     float: left;
-    font-size: 30px;
+    font-size: 50px;
 }
 
 .inbox{
