@@ -9,9 +9,10 @@ body{
 
 nav{
     min-width: 100%;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9.6px);
+    backdrop-filter: blur(9.8px);
+    -webkit-backdrop-filter: blur(9.8px);
     position: fixed;
     top: 0;
     display: flex;
@@ -30,13 +31,13 @@ a{
     text-decoration: none;
     color: black;
     font-size: 15px;
-    margin-left: 5px;
-    margin-right: 8px;
+    margin-left: 20%;
+    margin-right: 2%;
     align-items: center;
 }
 
 .home{
-    margin-right: 10px;
+    right: -30px;
 }
 
 li{
@@ -84,7 +85,7 @@ div{
     height: 200px;
 }
 
-#hola{
+#nutrition{
     padding: 0;
     margin-left: 75px;
     margin-bottom: 0;
@@ -94,7 +95,7 @@ div{
     color: #5e811e;
 }
 
-#adios{
+#scanner{
     padding: 0;
     margin: 0;
     margin-top: -55px;
@@ -114,4 +115,5 @@ div{
 #box1{
     padding-bottom: 5px;
     margin-bottom: 0;
+    margin: 6%;
 }
