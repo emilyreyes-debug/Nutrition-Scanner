@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: #fdf6f0;
+    background-color: #d3bea0;
 }
 
 nav{
@@ -47,4 +47,41 @@ li{
 #navbar li a:hover {
     transition-duration: 0.2s;
     letter-spacing: 1px;
+}
+
+div{
+    margin: 20px;
+    padding: 20px;
+    border: black solid 2px;
+}
+
+#h1{
+    width: 50px;
+    height: 50px;
+    margin: 0;
+}
+
+#title{
+    padding: 0;
+    margin-top: 80px;
+    display: flex;
+}
+
+#title2{
+    margin: 0;
+    padding: 0;
+    height: 90px;
+}
+
+#hola{
+    padding: 0;
+    margin-left: 0px;
+}
+
+#adios{
+    padding: 0;
+    margin: 0;
+    margin-top: -10px;
+    float: left;
+    font-size: 30px;
 }
