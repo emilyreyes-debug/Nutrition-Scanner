@@ -85,3 +85,15 @@ div{
     float: left;
     font-size: 30px;
 }
+
+.inbox{
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: -20px;
+    width: 50%;
+}
+
+#box1{
+    padding-bottom: 5px;
+    margin-bottom: 0;
+}
