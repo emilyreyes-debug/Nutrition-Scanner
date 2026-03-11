@@ -31,17 +31,19 @@ a{
     text-decoration: none;
     color: black;
     font-size: 15px;
-    margin-left: 20%;
+    margin-left: 30%;
     margin-right: 2%;
     align-items: center;
+    color: #537515;
 }
 
 .home{
-    right: -30px;
+    margin-right: -30px;
+
 }
 
 li{
-    margin-right:16px ;
+    margin-right:35px ;
     padding: 8px;
 }
 
@@ -53,7 +55,6 @@ li{
 div{
     margin: 20px;
     padding: 20px;
-    
 }
 
 #title{
@@ -105,15 +106,126 @@ div{
     color: #cc0a02;
 }
 
+.introtext{
+    background-color: #434924;
+    border-radius: 18px;
+    margin: 6%; 
+    text-align: center; 
+    font-family: monospace; 
+    font-size: 20px; 
+    color: #d3bea0;
+}
+
 .inbox{
     margin-left: -20px;
     margin-right: -20px;
-    margin-top: -20px;
-    width: 50%;
+    margin-top: -30px;
+    border-radius: 18px;
+    font-family: monospace; 
+    width: 60%;
+    font-size: 20px; 
 }
 
 #box1{
     padding-bottom: 5px;
     margin-bottom: 0;
     margin: 6%;
+}
+
+#text1{
+background-color: #968553;
+margin-bottom: 45px;
+   color: #5d0d18;
+   height: 110px;
+}
+
+#text2{
+    margin-top: 10px;
+    background-color: #5d0d18;
+    color: #968553;
+    height: 110px;
+}
+
+button{
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+    margin: 65px;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    padding: 15px;
+    float: right;
+    background: #32595c;
+    color: #caa169;
+}
+
+button:hover{
+    transition-duration: 0.2s;
+    background: #caa169;
+    color: #32595c;
+    letter-spacing: 1px;
+}
+
+
+
+
+/* The Modal (background) */
+.modal {
+  margin: 0;
+  display:; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  align-content: center; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+background: rgba(255, 255, 255, 0.28);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.7px);
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  margin: auto;
+  padding: 5px;
+  margin-top: 0;
+  height: 550px;
+  width: 60%;
+  border-radius: 15px;
+}
+
+/* The Close Button */
+.close {
+  color: gray;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#buy {
+    background-color: #32595c;
+    color: #f2a93b;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+
+#buy:hover{
+  background-color: #f2a93b;
+  color: #32595c;
 }
