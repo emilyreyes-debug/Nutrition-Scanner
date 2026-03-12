@@ -135,7 +135,9 @@ div{
 #text1{
 background-color: #968553;
 margin-bottom: 45px;
-font-size: 16px;
+    text-align: center;
+    font-size: 16px;
+    align-content: center;
    color: #5d0d18;
    height: 110px;
 }
@@ -143,6 +145,9 @@ font-size: 16px;
 #text2{
     margin-top: 10px;
     background-color: #5d0d18;
+    text-align: center;
+    font-size: 16px;
+    align-content: center;
     color: #968553;
     height: 110px;
 }
