@@ -1,5 +1,6 @@
-const GEMINI_API_KEY = 'AIzaSyDfad6pmgoRwAAkQiLEcoQIot7ZlLI6WbI';
-const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent?key=${GEMINI_API_KEY}`;
+import { GoogleGenAI } from 'https://esm.sh/@google/genai';
+
+const ai = new GoogleGenAI({ apiKey: window.GEMINI_API_KEY });
 
 document
   .getElementById('ai-form')
@@ -49,21 +50,12 @@ Format the response clearly with section headers. Be friendly, encouraging, and 
     document.getElementById('submit-btn').textContent = 'Generating...';
 
     try {
-      const response = await fetch(GEMINI_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          contents: [{ parts: [{ text: prompt }] }],
-        }),
+      const response = await ai.models.generateContent({
+        model: 'gemini-3.1-flash-lite-preview',
+        contents: prompt,
       });
 
-      if (!response.ok) {
-        const err = await response.json();
-        throw new Error(err.error?.message || 'API request failed');
-      }
-
-      const data = await response.json();
-      const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
+      const text = response.text;
 
       if (!text) throw new Error('No response received from AI.');
 
