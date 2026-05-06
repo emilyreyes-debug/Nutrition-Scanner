@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Mini Team Project - Create a Product Landing Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -47,17 +48,33 @@ href=""><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="cur
 <div id="box1">
     <div id="text1" class="inbox"><p>Here at Nutricional Scaner, we focus on helping people improve their health and love their bodies. We use nutritional analysis tools to better understand each person's needs and offer personalized recommendations. Our goal is to guide you through the process so you can live a healthier life, because nutrition is life.</p></div>
     <div id="text2" class="inbox"><p>For best results, we recommend that our users maintain a balanced diet, drink enough water, sleep well, and exercise regularly. It is also important to follow the nutrition and exercise plan consistently to achieve better results and improve long-term health.</p></div>
-    <img class="inbox" style="width: 35%; height: 345px; margin-top: -365px; float: right;" src="WhatsApp Image 2026-03-12 at 10.10.19.jpeg">
+<img class="inbox" src="WhatsApp Image 2026-03-12 at 10.10.19.jpeg" alt="Illustration">
 </div>
 
-<div class="introtext" style="margin-top: -30px; background-color: #a89072; color: #434924;">
-    <p>Just with a few months after starting the plan, our subscribers have noticed significant improvements in their physical condition and health. Patients with medical issues report feeling much better.</p>
+<div class="introtext" id="proof">
+    <p>In just a few months, our subscribers notice real improvements in energy, health, and consistency—because nutrition is life.</p>
 </div>
 
-<button class="myBtn">Start Scanning</button>
+<button class="myBtn" id="startBtn" type="button" aria-haspopup="dialog" aria-controls="myModal">Start Scanning</button>
 
+<section id="features" aria-label="Features">
+  <div class="feature-card">
+    <h3>1) Personal Scan</h3>
+    <p>We analyze your daily habits to understand where you can improve.</p>
+  </div>
+  <div class="feature-card">
+    <h3>2) Smart Targets</h3>
+    <p>Get a calorie and macro recommendation aligned with your goal.</p>
+  </div>
+  <div class="feature-card">
+    <h3>3) Plan You Can Keep</h3>
+    <p>Simple tips and meal ideas designed for real life.</p>
+  </div>
+</section>
 
-<img src="Gráfico mapa conceptual creativo moderno rosa (1).png" style="width: 100%;">
+<section id="logo-image-wrap">
+  <img id="concept-img" src="Gráfico mapa conceptual creativo moderno rosa (1).png" alt="Concept graphic">
+</section>
 
  <!-- Modal content -->
            <div id="myModal" class="modal">
@@ -109,11 +126,61 @@ href=""><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="cur
           <!-- Modal content -->
 
 
+          <section id="reviews" aria-label="Reviews">
+    <div class="section-title">
+      <h2>Reviews</h2>
+      <p>Rank us out of 5 and leave a short message.</p>
+    </div>
+
+    <div class="review-card" role="region" aria-live="polite">
+      <form id="review-form" autocomplete="off">
+        <div class="field">
+          <label for="review-name">Name</label>
+          <input id="review-name" name="review-name" type="text" placeholder="Your name" required />
+        </div>
+
+        <div class="field">
+          <label>Rating</label>
+          <div class="stars" id="stars" aria-label="Star rating" role="radiogroup">
+            <button type="button" class="star" data-value="1" aria-label="1 star" role="radio" aria-checked="false">★</button>
+            <button type="button" class="star" data-value="2" aria-label="2 stars" role="radio" aria-checked="false">★</button>
+            <button type="button" class="star" data-value="3" aria-label="3 stars" role="radio" aria-checked="false">★</button>
+            <button type="button" class="star" data-value="4" aria-label="4 stars" role="radio" aria-checked="false">★</button>
+            <button type="button" class="star" data-value="5" aria-label="5 stars" role="radio" aria-checked="false">★</button>
+          </div>
+          <input type="hidden" id="review-rating" name="review-rating" value="0" required />
+        </div>
+
+        <div class="field">
+          <label for="review-text">Review</label>
+          <textarea id="review-text" name="review-text" rows="3" placeholder="What did you like?" required></textarea>
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="review-submit">Submit Review</button>
+        </div>
+      </form>
+
+      <div class="reviews-summary">
+        <p class="avg-label">Average rating</p>
+        <div class="avg-row">
+          <div id="avg-stars" class="avg-stars" aria-hidden="true"></div>
+          <div id="avg-value" class="avg-value">—</div>
+        </div>
+        <p id="reviews-count" class="count">0 reviews</p>
+      </div>
+
+      <div id="reviews-list" class="reviews-list" aria-label="Submitted reviews"></div>
+    </div>
+  </section>
+
           <footer>
-        <div id="footer"><h3>©2026 — Gabrielle, Emely and Sergio| All rights Reserved 👹🤓🙉</h3></div>
+        <div id="footer"><h3> &#174 2026 &#8212; Gabrielle, Emily and Sergio| All rights Reserved</h3></div>
     </footer>
 
             <script src="script.js"></script>
+            <script src="concept.js"></script>
+            <script src="reviews.js"></script>
 
 </body>
 </html>
