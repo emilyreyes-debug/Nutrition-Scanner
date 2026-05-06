@@ -34,15 +34,11 @@
 
     const full = Math.floor(value);
     const frac = value - full;
-
-    // Render 5 stars with optional half-star support using two-tone overlay (simple approximation).
-    // For elegance without SVG complexity, we fill up to full stars and ignore half visually.
     const n = 5;
 
     target.innerHTML = '';
     for (let i = 1; i <= n; i++) {
       const star = document.createElement('span');
-      // Elegant rating icon (heart) instead of a star
      star.textContent = '★';
       star.style.fontSize = size;
       star.style.display = 'inline-block';
